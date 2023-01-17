@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+section {
+    margin-bottom: 96px;
+}
+
 img {
     height: auto;
 }
@@ -508,30 +512,38 @@ a {
     border-top-right-radius: 8px;
 }
 
+.prices__top--enterprise {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
 .prices__business--wrapper {
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     border-radius: 8px;
 }
 
-.prices__section__title {
+.prices__section--title {
     font-size: 20px;
     font-weight: 700;
     color: rgb(26, 32, 44);
     text-align: center;
 }
 
-.section__price {
+.prices__section--price {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin: 4px 0;
 }
 
-.section__duration {
+.prices__section--duration {
     text-align: center;
     letter-spacing: 1.6px;
     font-weight: 700;
     color: rgb(160, 174, 192);
+}
+
+.prices__business--title, .prices__business--price, .prices__business--duration {
+    color: white;
 }
 
 .prices__section--buynow {
@@ -539,6 +551,25 @@ a {
     width: 100%;
     text-align: center;
     padding: 32px 64px;
+}
+
+.prices__btn--buynow {
+    width: 100%;
+    padding: 16px 32px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: white;
+    border-radius: 9999px;
+    border: none;
+}
+
+.prices__personal--btn {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.prices__enterprise--btn {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .prices__business--btn {
@@ -549,6 +580,7 @@ a {
     color: rgb(100, 21, 255);
     background-color: rgb(247, 250, 252);
     border-radius: 9999px;
+    border: none;
 }
 
 .prices__section--features {
@@ -571,6 +603,35 @@ a {
     color: rgb(26, 32, 44);
 }
 
-@media (max-width: 728px) {
-    
+.main__feature--business {
+    color: white;
+}
+
+.feature__business {
+    color: white;
+}
+
+
+/*  TESTIMONIALS */
+
+.testimonials__img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.testimonials__rating {
+    margin-top: 40px;
+    color: #FFD700;
+}
+
+.testimonial__heading {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.testimonial__review {
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: rgb(74, 85, 104);
 }
